@@ -7,7 +7,7 @@
     --bg-secondary: #343353;
     --color-primary: #343353;
     --color-secondary: #f5f5f6;
-    --effect-color: #ffd15b;
+    --effect-color: #ffffff;
     --color-info: #838da2;
 
     --red: #fe4b60;
@@ -16,11 +16,17 @@
     --green: #5c8984;
     --dark-blue: #374259;
     --orange: #efb08c;
+    --blue: #5c89e2;
+
+    font-size: 115%;
+
 }
 
 html {
     scroll-behavior: smooth;
 }
+
+* {cursor: url(https://cur.cursors-4u.net/anime/ani-11/ani1030.cur), auto !important;}
 
 .active-nav-link {
     color: var(--effect-color);
