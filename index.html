@@ -292,12 +292,19 @@
             <h2 class="text-xl font-bold text-center">Get in touch</h2>
             <div class="gap-4 mt-6 text-[var(--color-primary)] text-center">
                 <div class="bg-[var(--bg-container-primary)] grid p-6 rounded-lg shadow-lg text-lg-center">
-                    <form action="https://docs.google.com/forms/d/e/1FAIpQLSeNM9nB3DYh4GNQlogy16-UUc7_PJX63Yv7ptCA8FwkD_Ss0g/formResponse">
+                    <form id="myForm" action="https://docs.google.com/forms/d/e/1FAIpQLSeNM9nB3DYh4GNQlogy16-UUc7_PJX63Yv7ptCA8FwkD_Ss0g/formResponse">
                         <input type="text" name="entry.1436773826" placeholder="Name" class="border"/>
                         &nbsp;&nbsp;
                         <input type="text" name="entry.884075013" placeholder="EMail ID" class="border"/>
                         <button style="user-select: auto;" class="bg-[var(--blue)] px-4 py-2 rounded-full text-white">Submit</button>
-                    </form>                
+                    </form>
+                    <script>
+                        document.getElementById('myForm').addEventListener('submit', function() {
+                            setTimeout(function() {
+                                window.location.href = 'https://www.kheshore.vercel.app/';
+                            }, 100);
+                        });
+                    </script>               
                     <br>
                     <div class="text-center">
                         <a href="https://github.com/kheshore">
