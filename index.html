@@ -22,13 +22,7 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script>
-    document.getElementById('myForm').addEventListener('submit', function() {
-        setTimeout(function() {
-            window.location.href = 'https://www.kheshore.vercel.app/';
-        }, 100);
-    });
-</script>
+
 <body class="bg-[var(--bg-primary)] text-[var(--color-primary)]">
 
     <!-- NAV section -->
@@ -303,7 +297,14 @@
                         &nbsp;&nbsp;
                         <input type="text" name="entry.884075013" placeholder="EMail ID" class="border"/>
                         <button style="user-select: auto;" class="bg-[var(--blue)] px-4 py-2 rounded-full text-white">Submit</button>
-                    </form>               
+                    </form>
+                    <script>
+                        document.getElementById('myForm').addEventListener('submit', function() {
+                            setTimeout(function() {
+                                window.location.href = 'https://www.kheshore.vercel.app/';
+                            }, 100);
+                        });
+                    </script>               
                     <br>
                     <div class="text-center">
                         <a href="https://github.com/kheshore">
