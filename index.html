@@ -299,10 +299,13 @@
                         <button style="user-select: auto;" class="bg-[var(--blue)] px-4 py-2 rounded-full text-white">Submit</button>
                     </form>
                     <script>
-                        document.getElementById('myForm').addEventListener('submit', function() {
-                            setTimeout(function() {
-                                window.location.href = 'https://kheshore.vercel.app/';
-                            }, 100);
+                        document.getElementById('myForm').addEventListener('submit', function(event) {
+                            event.preventDefault();
+                            var formData = new FormData(this);
+                            var xhr = new XMLHttpRequest();
+                            xhr.open('POST', this.action, true);
+                            xhr.send(formData);
+                            alert('Submitted successfully!');
                         });
                     </script>               
                     <br>
