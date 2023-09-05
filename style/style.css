@@ -32,6 +32,13 @@ html {
     color: var(--effect-color);
 }
 
+.logos{
+    padding: 10px;
+}
+.textbox{
+    padding: 10px;
+}
+
 .footer {
     position: relative;
     width: 100%;
