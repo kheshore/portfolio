@@ -75,9 +75,10 @@
         <!-- First Column: Side Profile Image -->
         <div class="h-96 flex items-center justify-center bg-[var(--bg-secondary)] text-[var(--color-secondary)]">
             <div class="relative">
-                <img src="./assets/banner.png" class="h-96" />
+                <img src="./assets/banner.png" class="h-96" alt="banner" />
                 <div class="absolute inset-0 flex items-center justify-center">
-                    <img src="./assets/profile.png" class="h-40 w-40 rounded-full bg-[var(--effect-color)]" />
+                    <img src="./assets/profile.png" class="h-40 w-40 rounded-full bg-[var(--effect-color)]"
+                        alt="Profile" />
                 </div>
             </div>
         </div>
@@ -87,7 +88,7 @@
             <h2 class="text-2xl font-bold text-center w-60">
                 Kheshore JR
                 <br>
-                <hr style="margin: 10px 0;">
+                <hr class="hro">
                 <div class="text-sm font-thin">
                     I am a Fresher with Experience based on Projects & Internships towards Full Stack Development and
                     IoT Engineering
@@ -120,7 +121,7 @@
                             depths of my comprehensive resume.
                         </div>
                         <div class="flex items-center mt-4">
-                            <a href="./assets/cv.pdf" download="kheshore.pdf">
+                            <a href="./assets/KheshoreJR.pdf" download="kheshore.pdf">
                                 <button class="rounded-full text-white py-2 px-4 bg-[var(--blue)]">
                                     Download Resume
                                 </button>
@@ -292,14 +293,16 @@
             <h2 class="text-xl font-bold text-center">Get in touch</h2>
             <div class="gap-4 mt-6 text-[var(--color-primary)] text-center">
                 <div class="bg-[var(--bg-container-primary)] grid p-6 rounded-lg shadow-lg text-lg-center">
-                    <form id="myForm" action="https://docs.google.com/forms/d/e/1FAIpQLSeNM9nB3DYh4GNQlogy16-UUc7_PJX63Yv7ptCA8FwkD_Ss0g/formResponse">
-                        <input type="text" name="entry.1436773826" placeholder="Name" class="border"/>
+                    <form id="myForm"
+                        action="https://docs.google.com/forms/d/e/1FAIpQLSeNM9nB3DYh4GNQlogy16-UUc7_PJX63Yv7ptCA8FwkD_Ss0g/formResponse">
+                        <input type="text" name="entry.1436773826" placeholder="Name" class="border" />
                         &nbsp;&nbsp;
-                        <input type="text" name="entry.884075013" placeholder="EMail ID" class="border"/>
-                        <button style="user-select: auto;" class="bg-[var(--blue)] px-4 py-2 rounded-full text-white">Submit</button>
+                        <input type="text" name="entry.884075013" placeholder="EMail ID" class="border" />
+                        <button style="user-select: auto;"
+                            class="bg-[var(--blue)] px-4 py-2 rounded-full text-white">Submit</button>
                     </form>
                     <script>
-                        document.getElementById('myForm').addEventListener('submit', function(event) {
+                        document.getElementById('myForm').addEventListener('submit', function (event) {
                             event.preventDefault();
                             var formData = new FormData(this);
                             var xhr = new XMLHttpRequest();
@@ -307,12 +310,12 @@
                             xhr.send(formData);
                             alert('Submitted successfully!');
                         });
-                    </script>               
+                    </script>
                     <br>
                     <div class="text-center">
                         <a href="https://github.com/kheshore">
                             <i class="uil uil-github-alt cursor-pointer"></i></a>
-                            &nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;
                         <a href="https://www.linkedin.com/in/kheshore-sns/">
                             <i class="uil uil-linkedin-alt cursor-pointer"></i></a>
                     </div>
@@ -321,21 +324,26 @@
         </section>
 
         <!-- Footer -->
-        <section
-            class="flex items-center mt-8 justify-center p-4 bg-[var(--bg-secondary)] text-[var(--color-secondary)]">
-            <img src="./assets/footer.png" alt="logo" />
-        </section>
-        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-        <script src="https://cdn.tailwindcss.com"></script>
-        <script src="./script/script.js" defer></script>
-        <script>
-            var swiper = new Swiper(".mySwiper", {
-                pagination: {
-                    el: ".swiper-pagination",
-                    dynamicBullets: true,
-                },
-            });
-        </script>
+        <footer class="new_footer_area">
+            <div class="new_footer_top">
+                <div class="footer_bg">
+                    <div class="footer_bg_one"></div>
+                    <div class="footer_bg_two"></div>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 col-sm-7">
+                            <p class="mb-0 f_400">The above content is declared to be in accordance with facts or truth to my knowledge.</p>
+                        </div>
+                        <div class="col-lg-6 col-sm-5 text-right">
+                            <p>Made with <i class="fa-solid fa-heart fa-flip fa-2xs" style="color: #ea2a2a;"></i> by Kheshore J R</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
 </body>
 
 </html>
