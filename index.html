@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="./style/style.css" />
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./style/swiper.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <title>Kheshore JR</title>
     <style type="text/tailwindcss">
@@ -77,7 +76,7 @@
             <div class="relative">
                 <img src="./assets/banner.png" class="h-96" />
                 <div class="absolute inset-0 flex items-center justify-center">
-                    <img src="./assets/profile.png" class="h-40 w-40 rounded-full bg-[var(--effect-color)]" />
+                    <img src="./assets/profile.png" class="h-50 w-40 rounded-full" />
                 </div>
             </div>
         </div>
@@ -120,7 +119,7 @@
                             depths of my comprehensive resume.
                         </div>
                         <div class="flex items-center mt-4">
-                            <a href="./assets/cv.pdf" download="kheshore.pdf">
+                            <a href="./assets/kheshore.pdf" download="kheshore.pdf">
                                 <button class="rounded-full text-white py-2 px-4 bg-[var(--blue)]">
                                     Download Resume
                                 </button>
@@ -253,7 +252,7 @@
                     </a>
                 </div>
                 <h3 class="text-base text-center text-[var(--color-info)]">
-                    Check out my LinkedIn profile to know more about my achievements => <button
+                    Check out my LinkedIn profile to know more about my achievements 👉 <button
                         class="rounded-full text-white py-2 px-4 bg-[var(--blue)]">
                         <a href="https://www.linkedin.com/in/kheshore-sns/">
                             <i class="uil uil-linkedin-alt cursor-pointer"></i></a>
@@ -277,7 +276,7 @@
                         <div class="bg-gray-200 p-4 rounded-md shadow">Column 6</div>
                     </div>
                     <h3 class="text-base text-center text-[var(--color-info)]">
-                        Check out my Github profile to know more about my projects => <button
+                        Check out my Github profile to know more about my projects 👉 <button
                             class="rounded-full text-white py-2 px-4 bg-[var(--blue)]">
                             <a href="https://github.com/kheshore">
                                 <i class="uil uil-github-alt cursor-pointer"></i></a>
@@ -293,9 +292,8 @@
             <div class="gap-4 mt-6 text-[var(--color-primary)] text-center">
                 <div class="bg-[var(--bg-container-primary)] grid p-6 rounded-lg shadow-lg text-lg-center">
                     <form id="myForm" action="https://docs.google.com/forms/d/e/1FAIpQLSeNM9nB3DYh4GNQlogy16-UUc7_PJX63Yv7ptCA8FwkD_Ss0g/formResponse">
-                        <input type="text" name="entry.1436773826" placeholder="Name" class="border"/>
-                        &nbsp;&nbsp;
-                        <input type="text" name="entry.884075013" placeholder="EMail ID" class="border"/>
+                        <input type="text" name="entry.1436773826" placeholder="Name" class="border-bottom" />
+                        <input type="text" name="entry.884075013" placeholder="EMail ID" class="border-bottom"/>
                         <button style="user-select: auto;" class="bg-[var(--blue)] px-4 py-2 rounded-full text-white">Submit</button>
                     </form>
                     <script>
@@ -311,23 +309,33 @@
                     <br>
                     <div class="text-center">
                         <a href="https://github.com/kheshore">
-                            <i class="uil uil-github-alt cursor-pointer"></i></a>
+                            <i class="uil uil-github-alt cursor-pointer" style="font-size: 1.5rem;"></i></a>
                             &nbsp;&nbsp;&nbsp;
                         <a href="https://www.linkedin.com/in/kheshore-sns/">
-                            <i class="uil uil-linkedin-alt cursor-pointer"></i></a>
+                            <i class="uil uil-linkedin-alt cursor-pointer" style="font-size: 1.5rem;"></i></a>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Footer -->
-        <section
-            class="flex items-center mt-8 justify-center p-4 bg-[var(--bg-secondary)] text-[var(--color-secondary)]">
-            <img src="./assets/footer.png" alt="logo" />
-        </section>
+            <footer class="footer">
+            <div class="waves">
+                <div class="wave" id="wave1"></div>
+                <div class="wave" id="wave2"></div>
+                <div class="wave" id="wave3"></div>
+                <div class="wave" id="wave4"></div>
+              </div>
+            <p class="footer-text">Coded with 💝 by Kheshore J R</p>
+        </footer>
+        
+        <!-- Script -->
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
         <script src="https://cdn.tailwindcss.com"></script>
         <script src="./script/script.js" defer></script>
+        
         <script>
             var swiper = new Swiper(".mySwiper", {
                 pagination: {
