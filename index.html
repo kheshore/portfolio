@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,7 +7,7 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <title>Kheshore JR</title>
+    <title id="title">Kheshore JR</title>
     <style type="text/tailwindcss">
         @layer utilities {
         .nav-items {
@@ -34,10 +33,6 @@
             <i class="uil uil-notes"></i>
             About
         </a>
-        <a href="#Achievements" class="menu-link flex flex-col items-center justify-center py-4">
-            <i class="uil uil-hard-hat"></i>
-            Achievements
-        </a>
         <a href="#contact" class="menu-link flex flex-col items-center justify-center py-4">
             <i class="uil uil-at"></i>
             Contact
@@ -53,9 +48,6 @@
                 </a>
                 <a href="#aboutMe">
                     <li class="nav-items">About</li>
-                </a>
-                <a href="#Achievements">
-                    <li class="nav-items">Achievements</li>
                 </a>
                 <a href="#contact">
                     <li class="nav-items">Contact</li>
@@ -82,19 +74,18 @@
         <!-- Second Column: Text and Button -->
         <div
             class="h-96 flex flex-col gap-4 items-center justify-center bg-[var(--bg-secondary)] text-[var(--color-secondary)]">
-            <h2 class="text-2xl font-bold text-center w-60">
-                Kheshore JR
+            <h2 class="text-2xl font-bold text-center w-80">
+                <span class="font-thin">Hey It's your</span><br>Kheshore JR !
                 <br>
                 <hr style="margin: 10px 0;">
                 <div class="text-sm font-thin">
-                    I am a Fresher with Experience based on Projects & Internships towards Full Stack Development and
-                    IoT Engineering
+                    "Tech enthusiast with a knack for crafting immersive user experiences and a flair for IoT engineering. Seeking a role to inject innovation, drive impactful contributions, and amplify company success through innovative  solutions"
                 </div>
             </h2>
             <br>
             <a href="#contact">
-                <button class="text-sm rounded-full py-2 px-4 bg-[var(--blue)]">
-                    Hire Me !
+                <button class="text-sm font-bold rounded-full py-2 px-4 bg-[var(--blue)]">
+                    Let's Connect !
                 </button>
             </a>
         </div>
@@ -104,7 +95,7 @@
     <!-- Container -->
     <div class="flex flex-col container mx-auto p-3">
         <!-- About me -->
-        <section class="flex flex-col gap-6 pt-16" id="aboutMe">
+        <section class="flex flex-col gap-6 pt-16" style="padding-top: 10px;"  id="aboutMe">
             <h2 class="text-xl font-bold text-center">About Me</h2>
             <div class="flex gap-6">
                 <div
@@ -113,12 +104,12 @@
                         <div style="text-align: justify;">
                             Crafting captivating user interfaces using modern frameworks and libraries and
                             Architecting scalable and secure server-side systems;
-                            I am a seasoned software developer with expertise in front-end and back-end development.
+                            I am a web developer with expertise in UI/UX and front-end development.
                             To know more on my professional journey and my technical expertise, delve into the
                             depths of my comprehensive resume.
                         </div>
                         <div class="flex items-center mt-4">
-                            <a href="./assets/kheshore.pdf" download="kheshore.pdf">
+                            <a href="./assets/KheshoreJR_CV.pdf" download="KheshoreJR_CV.pdf">
                                 <button class="rounded-full text-white py-2 px-4 bg-[var(--blue)]">
                                     Download Resume
                                 </button>
@@ -152,7 +143,7 @@
                             </div>
                             <div class="flex flex-col justify-start mb-2 gap-2">
                                 <div class="flex justify-between font-bold">
-                                    <div>Frontend - (Reactjs, Bootstrap, Tailwind)</div>
+                                    <div>Frontend - (React JS, Bootstrap)</div>
                                     <div>90%</div>
                                 </div>
                                 <div class="bg-gray-300 h-2 rounded-full">
@@ -174,7 +165,7 @@
                             </div>
                             <div class="flex flex-col justify-start mb-2 gap-2">
                                 <div class="flex justify-between font-bold">
-                                    <div>Database - (MySql, MongoDB, DynamoDB)</div>
+                                    <div>Database - (MySql, DynamoDB)</div>
                                     <div>70%</div>
                                 </div>
                                 <div class="bg-gray-300 h-2 rounded-full">
@@ -199,90 +190,6 @@
                 </div>
             </div>
         </section>
-
-        <!-- Achievements -->
-        <section class="pt-16" id="Achievements">
-            <h2 class="text-xl font-bold text-center">Achievements</h2>
-            <br>
-            <!-- Carousel -->
-            <div
-                class="grid grid-cols-1 md:grid-cols-1 shadow-lg bg-[var(--bg-container-primary)] rounded-lg text-[var(--color-info)] text-xs gap-6 p-6">
-                <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators">
-                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#myCarousel" data-slide-to="1"></li>
-                        <li data-target="#myCarousel" data-slide-to="2"></li>
-                    </ol>
-
-                    <!-- Slides -->
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="./assets/profile.png" height="200" width="200" alt="Image 1">
-                            <div class="carousel-caption">
-                                <h3>Slide 1</h3>
-                                <p>Caption for Slide 1</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./assets/profile.png" height="200" width="200" alt="Image 2">
-                            <div class="carousel-caption">
-                                <h3>Slide 2</h3>
-                                <p>Caption for Slide 2</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./assets/profile.png" height="200" width="200" alt="Image 3">
-                            <div class="carousel-caption">
-                                <h3>Slide 3</h3>
-                                <p>Caption for Slide 3</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Navigation buttons -->
-                    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
-                <h3 class="text-base text-center text-[var(--color-info)]">
-                    Check out my LinkedIn profile to know more about my achievements 👉 <button
-                        class="rounded-full text-white py-2 px-4 bg-[var(--blue)]">
-                        <a href="https://www.linkedin.com/in/kheshore-sns/">
-                            <i class="uil uil-linkedin-alt cursor-pointer"></i></a>
-                    </button>
-                </h3>
-            </div>
-        </section>
-
-        <!-- projects -->
-        <section class="pt-16" id="projects">
-            <h2 class="text-xl font-bold text-center">Projects</h2>
-            <div class="flex mt-6 gap-4 text-[var(--color-primary)]">
-                <div
-                    class="grid grid-cols-1 md:grid-cols-1 shadow-lg bg-[var(--bg-container-primary)] rounded-lg text-[var(--color-info)] text-xs gap-6 p-6">
-                    <div class="grid w-full grid-cols-8 gap-4">
-                        <div class="bg-gray-200 p-4 rounded-md shadow">AI ML Based TPMS</div>
-                        <div class="bg-gray-200 p-4 rounded-md shadow">Column 2</div>
-                        <div class="bg-gray-200 p-4 rounded-md shadow">Column 3</div>
-                        <div class="bg-gray-200 p-4 rounded-md shadow">Column 4</div>
-                        <div class="bg-gray-200 p-4 rounded-md shadow">Column 5</div>
-                        <div class="bg-gray-200 p-4 rounded-md shadow">Column 6</div>
-                    </div>
-                    <h3 class="text-base text-center text-[var(--color-info)]">
-                        Check out my Github profile to know more about my projects 👉 <button
-                            class="rounded-full text-white py-2 px-4 bg-[var(--blue)]">
-                            <a href="https://github.com/kheshore">
-                                <i class="uil uil-github-alt cursor-pointer"></i></a>
-                        </button>
-                    </h3>
-                </div>
-            </div>
 
         </section>
         <!-- Get in touch -->
@@ -315,17 +222,6 @@
                 </div>
             </div>
         </section>
-
-        <!-- Footer -->
-            <footer class="footer">
-            <div class="waves">
-                <div class="wave" id="wave1"></div>
-                <div class="wave" id="wave2"></div>
-                <div class="wave" id="wave3"></div>
-                <div class="wave" id="wave4"></div>
-              </div>
-            <p class="footer-text">Coded with 💝 by Kheshore J R</p>
-        </footer>
         
         <!-- Script -->
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
